@@ -145,7 +145,7 @@ public class Student {
 			}
 		 
 		 public void save(){
-			 System.out.print("//////////////SAVE");
+			
 			 Objectify service = getService();
 			 service.put(this);
 			}

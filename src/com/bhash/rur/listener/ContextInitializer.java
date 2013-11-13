@@ -3,6 +3,7 @@ package com.bhash.rur.listener;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
+import com.bhash.rur.bean.Company;
 import com.bhash.rur.bean.Resume;
 import com.bhash.rur.bean.Student;
 import com.googlecode.objectify.ObjectifyService;
@@ -19,6 +20,7 @@ public class ContextInitializer implements ServletContextListener {
 	public void contextInitialized(ServletContextEvent arg0) {
 		ObjectifyService.register(Student.class);
 		ObjectifyService.register(Resume.class);
+		ObjectifyService.register(Company.class);
 		
 	}
 
